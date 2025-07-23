@@ -11,12 +11,12 @@
 
 ## 🙋‍♂️ About Me
 
-- 🧠 Computer Science & Applied Mathematics major  
-- 🌎 Venezuelan, first-generation college student  
-- 🎓 Undergrad @ Wofford College  
-- 🛠️ Currently building: smart devices, automation tools & clean UIs  
-- 🚀 Career Goal: Become a Software Engineer blending CS + social impact  
-- ☕ Fun fact: I run on coffee, music, and random Wikipedia deep dives  
+- 🧠 Computer Science & Applied Math @ Wofford College  
+- 🛠️ Currently building: Planora, Global Voyage, CineScope, Open-Seat
+- 🌱 Learning: Software Development, Databases, Cloud Architecture, and improving and expanding my full stack development skills.
+- 🚀 Career Goal: Become a Software Engineer  
+- 🤲 Open to Collaborations!
+- 🏊‍♂️ Fun fact: I swam for 12 years, 3 of them I did Open Water Swimming (competing on the ocean).
 
 ---
 
