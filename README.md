@@ -1,7 +1,12 @@
-# 👋 Hey there, I'm Juan Salas!
+<div class=align="center">
 
-Welcome to my corner of GitHub! I’m a curious builder, lifelong learner, and passionate developer who loves creating meaningful, impactful, and user-friendly applications. Whether I’m working on full-stack web apps, embedded systems, or scraping data with a purpose, I’m always excited to tackle challenges with code. 💻✨
+  # 👋 Hey there, I'm Juan Salas!
+  
+  Welcome to my corner of GitHub! I’m a curious builder, lifelong learner, and passionate developer who loves creating meaningful, impactful, and user-friendly applications. Whether I’m working on full-stack web apps, embedded systems, or scraping data with a purpose, I’m always excited to tackle challenges with code. 💻✨
+  
+  <img src="https://avatars.githubusercontent.com/u/142240574?v=4" height="250" alt="Profile Picture" class="center" />
 
+</div>
 ---
 
 ## 🙋‍♂️ About Me
