@@ -4,7 +4,7 @@
   
   Welcome to my corner of GitHub! I’m a curious builder, lifelong learner, and passionate developer who loves creating meaningful, impactful, and user-friendly applications. Whether I’m working on full-stack web apps, embedded systems, or scraping data with a purpose, I’m always excited to tackle challenges with code. 💻✨
   
-  <img src="https://avatars.githubusercontent.com/u/142240574?v=4" height="250" alt="Profile Picture" class="center" />
+  <img src="https://avatars.githubusercontent.com/u/142240574?v=4" height="250" alt="Profile Picture" align="center" />
 
 </div>
 ---
@@ -61,7 +61,9 @@
 |--------|-------------|------------|
 | [**Global Voyage**](https://github.com/juanjbsalas/Global-Voyage) | A sleek, user-friendly travel website that helps users explore destinations and plan their adventures. | HTML, Tailwind CSS, JavaScript |
 | [**Open Seat**](https://github.com/juanjbsalas/Open-Seat) | A web scraper + notification system that alerts students when class seats become available. | Python, Selenium, Flask, smtplib |
-| [**Smart Koozie**](https://github.com/juanjbsalas/Smart-Koozie) | An Arduino-powered Bluetooth drink cooler that lets users set their drink temperature via iPhone. | Arduino Nano ESP32, C++, RemoteXY, Peltier |
+| [**Smart Koozie**](https://github.com/rmckay1/SmartKoozie) | An Arduino-powered Bluetooth drink cooler that lets users set their drink temperature via iPhone. | Arduino Nano ESP32, C++, RemoteXY, Peltier |
+
+Find more projects 👉 [here](https://github.com/juanjbsalas?tab=repositories)!
 
 ---
 
