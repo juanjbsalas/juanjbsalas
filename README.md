@@ -59,7 +59,7 @@
 
 | Project | Description | Tech Stack |
 |--------|-------------|------------|
-| [**Global Voyage**](https://github.com/juanjbsalas/Global-Voyage) | A sleek, user-friendly travel website that helps users explore destinations and plan their adventures. | HTML, Tailwind CSS, JavaScript |
+| [**Planora**](https://github.com/juanjbsalas/Planora) | A sleek, user-friendly travel website that helps users explore destinations and plan their adventures. | HTML, Tailwind CSS, JavaScript |
 | [**Open Seat**](https://github.com/juanjbsalas/Open-Seat) | A web scraper + notification system that alerts students when class seats become available. | Python, Selenium, Flask, smtplib |
 | [**Smart Koozie**](https://github.com/rmckay1/SmartKoozie) | An Arduino-powered Bluetooth drink cooler that lets users set their drink temperature via iPhone. | Arduino Nano ESP32, C++, RemoteXY, Peltier |
 
