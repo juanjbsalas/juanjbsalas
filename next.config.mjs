@@ -2,6 +2,7 @@
 const nextConfig = {
   output: 'export',
   basePath: '/juanjbsalas',
+  trailingSlash: true,
   images: {
     unoptimized: true,
   },
