@@ -11,6 +11,10 @@
     @apply bg-cream text-camo-900 antialiased;
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+
   /* Focus visible styles for accessibility */
   :focus-visible {
     @apply outline-2 outline-offset-2 outline-camo-700;
