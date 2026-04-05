@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import CamoBackground from '@/components/CamoBackground'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -60,7 +61,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="min-h-screen bg-cream">{children}</body>
+      <body className="min-h-screen bg-cream">
+        <CamoBackground />
+        {children}
+      </body>
     </html>
   )
 }

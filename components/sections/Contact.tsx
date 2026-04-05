@@ -77,7 +77,7 @@ export default function Contact() {
 
           {/* Resume download button */}
           <a
-            href="/resume.pdf"
+            href="/juanjbsalas/juan_salas_resume.pdf"
             download="Juan_Salas_Resume.pdf"
             className="flex items-center justify-center gap-2 w-full px-6 py-3.5 bg-camo-700 text-white font-medium rounded-xl hover:bg-camo-900 transition-colors text-sm mt-2"
           >
@@ -93,7 +93,7 @@ export default function Contact() {
           </h3>
           <div className="relative w-full rounded-xl border border-camo-100 overflow-hidden bg-white shadow-sm" style={{ height: '480px' }}>
             <iframe
-              src="/resume.pdf"
+              src="/juanjbsalas/juan_salas_resume.pdf"
               title="Juan Salas Resume"
               className="w-full h-full"
               aria-label="Juan Salas resume PDF preview"
@@ -112,7 +112,7 @@ export default function Contact() {
           </div>
           <p className="text-xs text-camo-900/40 text-center">
             Can&apos;t see the preview?{' '}
-            <a href="/resume.pdf" download className="text-camo-700 hover:underline">
+            <a href="/juanjbsalas/juan_salas_resume.pdf" download className="text-camo-700 hover:underline">
               Download directly
             </a>
           </p>
