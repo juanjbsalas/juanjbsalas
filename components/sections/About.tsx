@@ -33,7 +33,7 @@ export default function About() {
         <div className="lg:col-span-3 flex flex-col gap-5 text-base text-camo-900/70 leading-relaxed">
           <p>
             I&apos;m Juan Salas, a Computer Science and Applied Mathematics student at{' '}
-            <span className="text-camo-700 font-medium">Wofford College</span> (Class of 2026),
+            <span className="text-camo-700 font-medium">Wofford College</span> (Class of 2027),
             passionate about building software that is both useful and well-crafted. I enjoy the full
             stack — from designing intuitive user interfaces to architecting databases and APIs that
             power them.
