@@ -8,7 +8,7 @@ const PROJECTS: Project[] = [
     description:
       'A travel planning website for exploring destinations and organizing trip itineraries. Features destination browsing, trip scheduling, and a clean, map-friendly UI.',
     tech: ['HTML', 'Tailwind CSS', 'JavaScript'],
-    image: '/images/placeholder-project.svg',
+    image: '/juanjbsalas/images/placeholder-project.svg',
     githubUrl: 'https://github.com/juanjbsalas',
     liveUrl: 'https://juanjbsalas.github.io/Global-Voyage/',
   },
@@ -17,7 +17,7 @@ const PROJECTS: Project[] = [
     description:
       'A web scraper that monitors Wofford College\u2019s registration system and sends email notifications when a seat opens in a closed class section \u2014 saving students hours of manual checking.',
     tech: ['Python', 'Selenium', 'Flask', 'smtplib'],
-    image: '/images/placeholder-project.svg',
+    image: '/juanjbsalas/images/placeholder-project.svg',
     githubUrl: 'https://github.com/juanjbsalas',
   },
   {
@@ -25,7 +25,7 @@ const PROJECTS: Project[] = [
     description:
       'A Bluetooth-enabled drink cooler controlled via an iPhone app. Uses a Peltier module for active cooling and an Arduino Nano ESP32 for wireless communication via the RemoteXY platform.',
     tech: ['Arduino', 'C++', 'RemoteXY', 'Peltier Module'],
-    image: '/images/placeholder-project.svg',
+    image: '/juanjbsalas/images/placeholder-project.svg',
     githubUrl: 'https://github.com/juanjbsalas',
   },
 ]

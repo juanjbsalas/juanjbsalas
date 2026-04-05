@@ -43,7 +43,7 @@ export default function Hero() {
           CS &amp; Applied Math ·&nbsp;
           <span className="inline-flex items-center gap-1.5">
             <Image
-              src="/images/wofford-terrier.png"
+              src="/juanjbsalas/images/wofford-terrier.png"
               alt="Wofford College Terrier"
               width={24}
               height={24}
