@@ -69,7 +69,7 @@ export default function Navbar() {
             className="text-camo-900 font-semibold text-lg tracking-tight hover:text-camo-700 transition-colors"
             aria-label="Go to top"
           >
-            Juan Salas
+            JS
           </button>
 
           {/* Desktop links */}
