@@ -1,6 +1,6 @@
 'use client'
 
-import { Mail, Github, Linkedin, FileText, ExternalLink } from 'lucide-react'
+import { Mail, Github, Linkedin, ExternalLink } from 'lucide-react'
 import SectionWrapper from '@/components/SectionWrapper'
 
 const CONTACT_LINKS = [
@@ -73,14 +73,6 @@ export default function Contact() {
           </a>
         ))}
 
-        <a
-          href="/juanjbsalas/juan_salas_resume.pdf"
-          download="Juan_Salas_Resume.pdf"
-          className="flex items-center justify-center gap-2 w-full px-6 py-3.5 bg-camo-700 text-white font-medium rounded-xl hover:bg-camo-900 transition-colors text-sm mt-2"
-        >
-          <FileText size={16} aria-hidden="true" />
-          Download Resume
-        </a>
       </div>
     </SectionWrapper>
   )

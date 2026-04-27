@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Menu, X, FileText } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 const NAV_LINKS = [
   { label: 'Home', href: '#home' },
@@ -96,16 +96,6 @@ export default function Navbar() {
               )
             })}
 
-            {/* Resume download button */}
-            <a
-              href="/resume.pdf"
-              download="Juan_Salas_Resume.pdf"
-              className="flex items-center gap-1.5 px-4 py-1.5 text-sm font-medium border border-camo-700 text-camo-700 rounded-md hover:bg-camo-700 hover:text-white transition-colors"
-              aria-label="Download resume PDF"
-            >
-              <FileText size={14} />
-              Resume
-            </a>
           </div>
 
           {/* Mobile hamburger */}
@@ -138,14 +128,6 @@ export default function Navbar() {
               </button>
             )
           })}
-          <a
-            href="/resume.pdf"
-            download="Juan_Salas_Resume.pdf"
-            className="flex items-center gap-2 w-fit px-4 py-2 text-sm font-medium border border-camo-700 text-camo-700 rounded-md hover:bg-camo-700 hover:text-white transition-colors"
-          >
-            <FileText size={14} />
-            Download Resume
-          </a>
         </div>
       )}
     </nav>

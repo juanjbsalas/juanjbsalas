@@ -1,4 +1,3 @@
-import { Github, ExternalLink } from 'lucide-react'
 import Image from 'next/image'
 
 export interface Project {
@@ -16,7 +15,7 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project, featured = false }: ProjectCardProps) {
-  const { title, description, tech, image, githubUrl, liveUrl } = project
+  const { title, description, tech, image } = project
 
   return (
     <article
@@ -57,31 +56,6 @@ export default function ProjectCard({ project, featured = false }: ProjectCardPr
           ))}
         </div>
 
-        {/* Links */}
-        <div className="flex items-center gap-4 pt-1">
-          <a
-            href={githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`${title} GitHub repository`}
-            className="flex items-center gap-1.5 text-sm text-camo-700 hover:text-camo-900 font-medium transition-colors"
-          >
-            <Github size={15} />
-            Code
-          </a>
-          {liveUrl && (
-            <a
-              href={liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={`${title} live demo`}
-              className="flex items-center gap-1.5 text-sm text-camo-700 hover:text-camo-900 font-medium transition-colors"
-            >
-              <ExternalLink size={15} />
-              Live Demo
-            </a>
-          )}
-        </div>
       </div>
     </article>
   )
