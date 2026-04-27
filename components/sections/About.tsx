@@ -35,20 +35,19 @@ export default function About() {
             I&apos;m Juan Salas, a Computer Science and Applied Mathematics student at{' '}
             <span className="text-camo-700 font-medium">Wofford College</span> (Class of 2027),
             passionate about building software that is both useful and well-crafted. I enjoy the full
-            stack — from designing intuitive user interfaces to architecting databases and APIs that
+            stack; from designing intuitive user interfaces to architecting databases and APIs that
             power them.
           </p>
           <p>
             Right now I&apos;m focused on{' '}
-            <span className="text-camo-700 font-medium">InvoiceXchange</span>, a modern invoicing
-            platform I&apos;m building from the ground up. I&apos;m also deepening my skills in
+            <span className="text-camo-700 font-medium">EstateWatch</span>. I&apos;m also deepening my skills in
             databases, cloud architecture, and full-stack web development. My goal is to work at a
             company where I can contribute to impactful products, grow quickly, and eventually build
             my own.
           </p>
           <p>
             Outside of engineering, I competed as a swimmer for 12 years — including 3 years of
-            collegiate Open Water Swimming. I bring that same work ethic and discipline to everything
+            Open Water Swimming. I bring that same work ethic and discipline to everything
             I build.
           </p>
         </div>

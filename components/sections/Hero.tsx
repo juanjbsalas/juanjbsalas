@@ -54,12 +54,12 @@ export default function Hero() {
         </p>
 
         {/* Tagline */}
-        <p
+        {/* <p
           className="text-base sm:text-lg text-camo-500 italic mb-10 animate-fade-up"
           style={{ animationFillMode: 'both', animationDelay: '300ms' }}
         >
           Building invoice investment marketplace using Typescript + AI technologies
-        </p>
+        </p> */}
 
         {/* CTA Buttons */}
         <div
