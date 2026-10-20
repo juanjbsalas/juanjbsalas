@@ -19,8 +19,7 @@ const OTHER_EXPERIENCE: TimelineEntry[] = [
   {
     role: 'Information Technology Help Desk',
     company: 'Wofford College',
-    // TODO: add dates
-    dates: '',
+    dates: 'October 2024 – November 2024',
     logo: '/images/wofford-terrier.png',
     bullets: [
       'Provided technical support to students, faculty, and staff, troubleshooting hardware, software, account, and network issues across campus.',
