@@ -7,11 +7,12 @@ const NAV_LINKS = [
   { label: 'Home', href: '#home' },
   { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
-  { label: 'About', href: '#about' },
+  { label: 'Education', href: '#education' },
+  { label: 'About Me', href: '#about' },
   { label: 'Contact', href: '#contact' },
 ]
 
-const SECTION_IDS = ['home', 'experience', 'projects', 'about', 'contact']
+const SECTION_IDS = ['home', 'experience', 'projects', 'education', 'about', 'contact']
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState('home')

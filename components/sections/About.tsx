@@ -19,14 +19,9 @@ export default function About() {
   return (
     <SectionWrapper id="about">
       {/* Section heading */}
-      <div className="mb-12">
-        <p className="text-sm font-semibold text-camo-700 uppercase tracking-widest mb-2">
-          About Me
-        </p>
-        <h2 className="text-3xl sm:text-4xl font-bold text-camo-900 tracking-tight">
-          A little about me
-        </h2>
-      </div>
+      <h2 className="mb-12 text-3xl sm:text-4xl font-bold text-camo-900 tracking-tight">
+        About Me
+      </h2>
 
       <div className="grid lg:grid-cols-5 gap-12 items-start">
         {/* Text — 3 cols */}

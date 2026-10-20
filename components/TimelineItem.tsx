@@ -39,20 +39,20 @@ export default function TimelineItem({
             <h3 className="font-semibold text-camo-900 text-lg">{role}</h3>
             <div className="flex items-center gap-2 mt-0.5">
               {logo && (
-                <div className="relative w-5 h-5 flex-shrink-0">
+                <div className="relative w-[30px] h-[30px] flex-shrink-0">
                   <Image
                     src={logo}
                     alt={`${company} logo`}
                     fill
                     className="object-contain"
-                    sizes="20px"
+                    sizes="30px"
                   />
                 </div>
               )}
               <p className="text-camo-700 font-medium text-sm">{company}</p>
             </div>
           </div>
-          <time className="text-sm text-camo-900/50 whitespace-nowrap">{dates}</time>
+          {dates && <time className="text-sm text-camo-900/50 whitespace-nowrap">{dates}</time>}
         </div>
 
         {bullets && bullets.length > 0 && (

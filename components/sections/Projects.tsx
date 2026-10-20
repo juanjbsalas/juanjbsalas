@@ -8,8 +8,8 @@ import ProjectCard from '@/components/ProjectCard'
 import type { Project } from '@/components/ProjectCard'
 
 const INVOICE_IMAGES = [
-  '/juanjbsalas/images/invoicexchange/img1.png',
-  '/juanjbsalas/images/invoicexchange/img2.png',
+  '/images/invoicexchange/img1.png',
+  '/images/invoicexchange/img2.png',
 ]
 
 const SIMPLE_PROJECTS: Project[] = [
@@ -18,7 +18,7 @@ const SIMPLE_PROJECTS: Project[] = [
     description:
       'A travel planning website for exploring destinations and organizing trip itineraries. Features destination browsing, trip scheduling, and a clean, map-friendly UI.',
     tech: ['HTML', 'Tailwind CSS', 'JavaScript'],
-    image: '/juanjbsalas/images/placeholder-project.svg',
+    image: '/images/placeholder-project.svg',
     githubUrl: 'https://github.com/juanjbsalas',
     liveUrl: 'https://juanjbsalas.github.io/Global-Voyage/',
   },
@@ -27,7 +27,7 @@ const SIMPLE_PROJECTS: Project[] = [
     description:
       "A web scraper that monitors Wofford College's registration system and sends email notifications when a seat opens in a closed class section — saving students hours of manual checking.",
     tech: ['Python', 'Selenium', 'Flask', 'smtplib'],
-    image: '/juanjbsalas/images/OpenSeat.png',
+    image: '/images/OpenSeat.png',
     githubUrl: 'https://github.com/juanjbsalas',
   },
   {
@@ -35,7 +35,7 @@ const SIMPLE_PROJECTS: Project[] = [
     description:
       'A webapp that uses the OMDB API to fetch movie data, displaying ratings, cast, plot, and other info for any film — making it easy to look up what you want to watch.',
     tech: ['React', 'JavaScript', 'OMDB API', 'CSS'],
-    image: '/juanjbsalas/images/cinescope.png',
+    image: '/images/cinescope.png',
     githubUrl: 'https://github.com/juanjbsalas',
   },
 ]
@@ -82,13 +82,13 @@ function InvoiceXchangeCard() {
 
               {/* Winthrop hackathon row */}
               <div className="flex items-center gap-2 mb-3">
-                <div className="relative w-5 h-5 flex-shrink-0">
+                <div className="relative w-[30px] h-[30px] flex-shrink-0">
                   <Image
-                    src="/juanjbsalas/images/winthrop.png"
+                    src="/images/winthrop.png"
                     alt="Winthrop University"
                     fill
                     className="object-contain"
-                    sizes="20px"
+                    sizes="30px"
                   />
                 </div>
                 <span className="text-xs font-semibold text-camo-600 uppercase tracking-wider">
@@ -170,7 +170,7 @@ function HotelLensCard() {
       {/* Header image area with hackathon badge */}
       <div className="relative aspect-video bg-camo-100 overflow-hidden flex items-center justify-center">
         <Image
-          src="/juanjbsalas/images/placeholder-project.svg"
+          src="/images/placeholder-project.svg"
           alt="HotelLens project screenshot"
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -178,13 +178,13 @@ function HotelLensCard() {
         />
         {/* Hackathon badge overlay */}
         <div className="absolute top-3 left-3 flex items-center gap-1.5 px-2 py-1 bg-white/90 backdrop-blur-sm rounded-md shadow-sm">
-          <div className="relative w-4 h-4 flex-shrink-0">
+          <div className="relative w-6 h-6 flex-shrink-0">
             <Image
-              src="/juanjbsalas/images/gtech.png"
+              src="/images/gtech.png"
               alt="Georgia Tech"
               fill
               className="object-contain"
-              sizes="16px"
+              sizes="24px"
             />
           </div>
           <span className="text-xs font-semibold text-camo-800">Georgia Tech Hackathon</span>
@@ -211,12 +211,12 @@ function HotelLensCard() {
 }
 
 const KOOZIE_SLIDES = [
-  { type: 'video' as const, src: '/juanjbsalas/images/smartkoozie/2.mp4' },
-  { type: 'image' as const, src: '/juanjbsalas/images/smartkoozie/anatomy.png' },
-  { type: 'image' as const, src: '/juanjbsalas/images/smartkoozie/flow.png' },
-  { type: 'image' as const, src: '/juanjbsalas/images/smartkoozie/overview.png' },
-  { type: 'image' as const, src: '/juanjbsalas/images/smartkoozie/prototype.png' },
-  { type: 'image' as const, src: '/juanjbsalas/images/smartkoozie/smartkoozieapp.png' },
+  { type: 'video' as const, src: '/images/smartkoozie/2.mp4' },
+  { type: 'image' as const, src: '/images/smartkoozie/anatomy.png' },
+  { type: 'image' as const, src: '/images/smartkoozie/flow.png' },
+  { type: 'image' as const, src: '/images/smartkoozie/overview.png' },
+  { type: 'image' as const, src: '/images/smartkoozie/prototype.png' },
+  { type: 'image' as const, src: '/images/smartkoozie/smartkoozieapp.png' },
 ]
 
 function SmartKoozieCard() {
@@ -244,7 +244,7 @@ function SmartKoozieCard() {
           <video
             key="koozie-video"
             src={slide.src}
-            poster="/juanjbsalas/images/smartkoozie/poster.png"
+            poster="/images/smartkoozie/poster.png"
             autoPlay
             muted
             loop
@@ -285,9 +285,6 @@ export default function Projects() {
   return (
     <SectionWrapper id="projects" className="bg-camo-100/30">
       <div className="mb-12">
-        <p className="text-sm font-semibold text-camo-700 uppercase tracking-widest mb-2">
-          Projects
-        </p>
         <h2 className="text-3xl sm:text-4xl font-bold text-camo-900 tracking-tight">
           Projects
         </h2>

@@ -18,12 +18,12 @@ export default function Hero() {
           {/* Open badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-green-300 bg-green-50 text-xs font-medium text-green-700">
             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" aria-hidden="true" />
-            Open for Fall 2026 and Spring 2027 internships/roles
+            Open for Spring 2027, Summer 2027, and Fall 2027 opportunities
           </div>
           {/* Closed badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-red-300 bg-red-50 text-xs font-medium text-red-600">
             <span className="w-2 h-2 rounded-full bg-red-500" aria-hidden="true" />
-            Closed for Summer 2026 Internships
+            Closed for Fall 2026 internships/co-ops
           </div>
         </div>
 
@@ -43,10 +43,10 @@ export default function Hero() {
           CS &amp; Applied Math ·&nbsp;
           <span className="inline-flex items-center gap-1.5">
             <Image
-              src="/juanjbsalas/images/wofford-terrier.png"
+              src="/images/wofford-terrier.png"
               alt="Wofford College Terrier"
-              width={24}
-              height={24}
+              width={36}
+              height={36}
               className="inline-block object-contain"
             />
             Wofford College

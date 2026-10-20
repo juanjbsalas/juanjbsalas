@@ -24,7 +24,7 @@ function generateShapes(): CamoShape[] {
     const row = Math.floor(i / 3)
     return {
       id: i,
-      src: `/juanjbsalas/images/camo/camo${i + 1}.png`,
+      src: `/images/camo/camo${i + 1}.png`,
       left: col * 33 + 5 + rand(-4, 4),   // cols at ~5%, ~38%, ~71% + jitter
       top: row * 33 + rand(-5, 5),         // rows at ~0%, ~33%, ~66% + jitter
       size: rand(160, 380),

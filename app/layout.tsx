@@ -16,7 +16,7 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://juanjbsalas.github.io'),
+  metadataBase: new URL('https://juansalas.dev'),
   title: 'Juan Salas — Software Engineer',
   description:
     'CS & Applied Math student at Wofford College. Building full-stack web apps and software tools. Open to software engineering internships.',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: 'Juan Salas — Software Engineer',
     description:
       'CS & Applied Math student at Wofford College. Building full-stack web apps and software tools.',
-    url: 'https://juanjbsalas.github.io',
+    url: 'https://juansalas.dev',
     siteName: 'Juan Salas Portfolio',
     images: [
       {

@@ -32,14 +32,11 @@ export default function Contact() {
     <SectionWrapper id="contact" className="bg-camo-100/30">
       {/* Section heading */}
       <div className="mb-12 text-center">
-        <p className="text-sm font-semibold text-camo-700 uppercase tracking-widest mb-2">
-          Contact
-        </p>
         <h2 className="text-3xl sm:text-4xl font-bold text-camo-900 tracking-tight mb-3">
-          Let&apos;s connect
+          Contact
         </h2>
         <p className="text-camo-900/60 text-base leading-relaxed max-w-xl mx-auto">
-          I&apos;m actively looking for software engineering internships for Fall 2026/Spring 2027. Whether
+          I&apos;m actively looking for software engineering internships/co-ops for Spring 2027, Summer 2027, and Fall 2027. Whether
           you have an opportunity, a question, or just want to say hi — my inbox is open.
         </p>
       </div>
