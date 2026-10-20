@@ -37,7 +37,7 @@ export default function Contact() {
         </h2>
         <p className="text-camo-900/60 text-base leading-relaxed max-w-xl mx-auto">
           I&apos;m always looking to learn something new and meet new people. Whether
-          you have an opportunity, a question, or just want to say hi — my inbox is open.
+          you have an opportunity, a question, or just want to say hi, my inbox is open.
         </p>
       </div>
 

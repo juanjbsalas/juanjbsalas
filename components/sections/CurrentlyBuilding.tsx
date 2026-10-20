@@ -16,7 +16,7 @@ const PROJECTS = [
     name: '🏡 EstateWatch',
     platform: 'Startup',
     description:
-      'A startup focused on streamlining the estate probate process end-to-end. More details are limited for business reasons — stay tuned.',
+      'A startup focused on streamlining the estate probate process end-to-end. More details are limited for business reasons, so stay tuned.',
     status: 'Stealth',
     tech: [],
   },

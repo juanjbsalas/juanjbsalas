@@ -1,18 +1,44 @@
 import SectionWrapper from '@/components/SectionWrapper'
 
+// Ordered roughly by how often recruiters search for each skill
 const SKILLS = [
   'Python',
+  'Java',
   'JavaScript',
   'TypeScript',
+  'SQL',
+  'React',
+  'Node.js',
+  'AWS Athena',
+  'Docker',
+  'Git',
   'C++',
-  'HTML & CSS',
-  'Flask',
+  'C#',
+  '.NET',
   'Next.js',
-  'Tailwind CSS',
+  'REST APIs',
+  'CI/CD',
+  'Linux',
+  'Agile',
+  'SQL Server',
   'PostgreSQL',
-  'Git & GitHub',
-  'Arduino',
+  'HTML5',
+  'CSS3',
+  'C',
+  'Tailwind CSS',
+  'GitHub',
+  'ETL Pipelines',
+  'Supabase',
+  'Automation',
+  'PowerShell',
+  'Flask',
+  'R',
   'Selenium',
+  'Vercel',
+  'Arduino',
+  'VB',
+  'Assembly',
+  'Sourcetree',
 ]
 
 export default function About() {
@@ -41,7 +67,7 @@ export default function About() {
             my own.
           </p>
           <p>
-            Outside of engineering, I competed as a swimmer for 12 years — including 3 years of
+            Outside of engineering, I competed as a swimmer for 12 years, including 3 years of
             Open Water Swimming. I bring that same work ethic and discipline to everything
             I build.
           </p>

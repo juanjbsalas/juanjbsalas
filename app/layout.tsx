@@ -17,7 +17,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://juansalas.dev'),
-  title: 'Juan Salas — Software Engineer',
+  title: 'Juan Salas | Software Engineer',
   description:
     'CS & Applied Math student at Wofford College. Building full-stack web apps and software tools. Open to software engineering internships.',
   keywords: [
@@ -31,28 +31,20 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Juan Salas', url: 'https://github.com/juanjbsalas' }],
   openGraph: {
-    title: 'Juan Salas — Software Engineer',
+    title: 'Juan Salas | Software Engineer',
     description:
       'CS & Applied Math student at Wofford College. Building full-stack web apps and software tools.',
     url: 'https://juansalas.dev',
     siteName: 'Juan Salas Portfolio',
-    images: [
-      {
-        url: '/images/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Juan Salas — Software Engineer',
-      },
-    ],
+    // Preview image comes from app/opengraph-image.tsx
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Juan Salas — Software Engineer',
+    title: 'Juan Salas | Software Engineer',
     description:
       'CS & Applied Math student at Wofford College. Building full-stack web apps and software tools.',
-    images: ['/images/og-image.png'],
   },
   robots: {
     index: true,

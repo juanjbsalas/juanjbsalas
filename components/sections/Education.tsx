@@ -5,7 +5,7 @@ const EDUCATION: TimelineEntry[] = [
   {
     role: 'BS Computer Science & Applied Mathematics',
     company: 'Wofford College',
-    dates: 'Aug 2023 – May 2027',
+    dates: '2023-2027',
     logo: '/images/wofford-terrier.png',
     bullets: [
       'Relevant courses: Data Structures & Algorithms, Algorithm Design & Analysis, Embedded Systems, Computer Architecture, Operating Systems, Theory of Computation, Applied AI, Complex Analysis, Modern Physics.',

@@ -1,11 +1,12 @@
 import Image from 'next/image'
+import { Github, ExternalLink } from 'lucide-react'
 
 export interface Project {
   title: string
   description: string
   tech: string[]
   image: string
-  githubUrl: string
+  githubUrl?: string
   liveUrl?: string
 }
 
@@ -14,8 +15,40 @@ interface ProjectCardProps {
   featured?: boolean
 }
 
+/** GitHub / live-site links shown at the bottom of a project card. */
+export function ProjectLinks({ githubUrl, liveUrl }: { githubUrl?: string; liveUrl?: string }) {
+  if (!githubUrl && !liveUrl) return null
+
+  return (
+    <div className="flex items-center gap-4 pt-1">
+      {githubUrl && (
+        <a
+          href={githubUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 text-sm font-medium text-camo-700 hover:text-camo-900 transition-colors"
+        >
+          <Github size={15} />
+          Code
+        </a>
+      )}
+      {liveUrl && (
+        <a
+          href={liveUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 text-sm font-medium text-camo-700 hover:text-camo-900 transition-colors"
+        >
+          <ExternalLink size={15} />
+          Live site
+        </a>
+      )}
+    </div>
+  )
+}
+
 export default function ProjectCard({ project, featured = false }: ProjectCardProps) {
-  const { title, description, tech, image } = project
+  const { title, description, tech, image, githubUrl, liveUrl } = project
 
   return (
     <article
@@ -29,7 +62,7 @@ export default function ProjectCard({ project, featured = false }: ProjectCardPr
           src={image}
           alt={`${title} project screenshot`}
           fill
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         {featured && (
@@ -56,6 +89,7 @@ export default function ProjectCard({ project, featured = false }: ProjectCardPr
           ))}
         </div>
 
+        <ProjectLinks githubUrl={githubUrl} liveUrl={liveUrl} />
       </div>
     </article>
   )

@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { ChevronLeft, ChevronRight, Trophy } from 'lucide-react'
 import SectionWrapper from '@/components/SectionWrapper'
-import ProjectCard from '@/components/ProjectCard'
+import ProjectCard, { ProjectLinks } from '@/components/ProjectCard'
 import type { Project } from '@/components/ProjectCard'
 
 const INVOICE_IMAGES = [
@@ -18,25 +18,26 @@ const SIMPLE_PROJECTS: Project[] = [
     description:
       'A travel planning website for exploring destinations and organizing trip itineraries. Features destination browsing, trip scheduling, and a clean, map-friendly UI.',
     tech: ['HTML', 'Tailwind CSS', 'JavaScript'],
-    image: '/images/placeholder-project.svg',
-    githubUrl: 'https://github.com/juanjbsalas',
-    liveUrl: 'https://juanjbsalas.github.io/Global-Voyage/',
+    image: '/images/planora.jpg',
+    githubUrl: 'https://github.com/juanjbsalas/Planora',
+    liveUrl: 'https://planora-fawn.vercel.app',
   },
   {
     title: 'Open Seat',
     description:
-      "A web scraper that monitors Wofford College's registration system and sends email notifications when a seat opens in a closed class section — saving students hours of manual checking.",
+      "A web scraper that monitors Wofford College's registration system and sends email notifications when a seat opens in a closed class section, saving students hours of manual checking.",
     tech: ['Python', 'Selenium', 'Flask', 'smtplib'],
     image: '/images/OpenSeat.png',
-    githubUrl: 'https://github.com/juanjbsalas',
+    githubUrl: 'https://github.com/juanjbsalas/Open-Seat',
   },
   {
     title: 'CineScope',
     description:
-      'A webapp that uses the OMDB API to fetch movie data, displaying ratings, cast, plot, and other info for any film — making it easy to look up what you want to watch.',
+      'A webapp that uses the OMDB API to fetch movie data, displaying ratings, cast, plot, and other info for any film. It makes it easy to look up what you want to watch.',
     tech: ['React', 'JavaScript', 'OMDB API', 'CSS'],
     image: '/images/cinescope.png',
-    githubUrl: 'https://github.com/juanjbsalas',
+    githubUrl: 'https://github.com/juanjbsalas/CineScope',
+    liveUrl: 'https://cine-scope-two.vercel.app',
   },
 ]
 
@@ -117,6 +118,11 @@ function InvoiceXchangeCard() {
                 </span>
               ))}
             </div>
+
+            <ProjectLinks
+              githubUrl="https://github.com/juanjbsalas/invoice-exchange"
+              liveUrl="https://invoice-exchange.vercel.app"
+            />
           </div>
 
           {/* Right: auto-sliding image carousel */}
@@ -170,10 +176,10 @@ function HotelLensCard() {
       {/* Header image area with hackathon badge */}
       <div className="relative aspect-video bg-camo-100 overflow-hidden flex items-center justify-center">
         <Image
-          src="/images/placeholder-project.svg"
+          src="/images/hotellens.jpg"
           alt="HotelLens project screenshot"
           fill
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         {/* Hackathon badge overlay */}
@@ -195,7 +201,7 @@ function HotelLensCard() {
       <div className="flex flex-col flex-1 p-5 gap-3">
         <h3 className="font-semibold text-camo-900 text-lg leading-snug">HotelLens</h3>
         <p className="text-sm text-camo-900/65 leading-relaxed flex-1">
-          A webapp helping travelers aged 18–21 find hotels that allow check-in under 21 —
+          A webapp helping travelers aged 18–21 find hotels that allow check-in under 21,
           a surprisingly difficult problem for young adults. Built at Georgia Tech&apos;s hackathon.
         </p>
         <div className="flex flex-wrap gap-1.5">
@@ -205,6 +211,7 @@ function HotelLensCard() {
             </span>
           ))}
         </div>
+        <ProjectLinks githubUrl="https://github.com/juanjbsalas/hotelLens" />
       </div>
     </article>
   )
