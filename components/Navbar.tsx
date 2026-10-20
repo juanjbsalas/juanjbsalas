@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
+import ThemeToggle from '@/components/ThemeToggle'
 
 const NAV_LINKS = [
   { label: 'Home', href: '#home' },
@@ -67,7 +68,7 @@ export default function Navbar() {
           {/* Logo / Name */}
           <button
             onClick={() => handleNavClick('#home')}
-            className="text-camo-900 font-semibold text-lg tracking-tight hover:text-camo-700 transition-colors"
+            className="text-camo-900 font-semibold text-xl tracking-tight hover:text-camo-700 transition-colors"
             aria-label="Go to top"
           >
             JS
@@ -82,7 +83,7 @@ export default function Navbar() {
                 <button
                   key={href}
                   onClick={() => handleNavClick(href)}
-                  className={`text-sm font-medium transition-colors relative pb-0.5 ${
+                  className={`text-base font-medium transition-colors relative pb-0.5 ${
                     isActive
                       ? 'text-camo-700'
                       : 'text-camo-900/70 hover:text-camo-700'
@@ -97,17 +98,21 @@ export default function Navbar() {
               )
             })}
 
+            <ThemeToggle />
           </div>
 
-          {/* Mobile hamburger */}
-          <button
-            className="md:hidden p-2 text-camo-900 hover:text-camo-700 transition-colors"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label={menuOpen ? 'Close menu' : 'Open menu'}
-            aria-expanded={menuOpen}
-          >
-            {menuOpen ? <X size={22} /> : <Menu size={22} />}
-          </button>
+          {/* Mobile theme toggle + hamburger */}
+          <div className="md:hidden flex items-center gap-1">
+            <ThemeToggle />
+            <button
+              className="p-2 text-camo-900 hover:text-camo-700 transition-colors"
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={menuOpen}
+            >
+              {menuOpen ? <X size={22} /> : <Menu size={22} />}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -121,7 +126,7 @@ export default function Navbar() {
               <button
                 key={href}
                 onClick={() => handleNavClick(href)}
-                className={`text-left text-base font-medium py-1 transition-colors ${
+                className={`text-left text-lg font-medium py-1 transition-colors ${
                   isActive ? 'text-camo-700' : 'text-camo-900/70 hover:text-camo-700'
                 }`}
               >

@@ -123,6 +123,7 @@ export default function CamoBackground() {
           <img
             src={shape.src}
             alt=""
+            className="camo-shape"
             style={{
               position: 'absolute',
               inset: 0,

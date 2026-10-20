@@ -27,7 +27,7 @@ export default function CurrentlyBuilding() {
     <SectionWrapper id="building" className="bg-camo-100/40">
       <div className="flex items-center gap-3 mb-8">
         <div className="w-2 h-2 rounded-full bg-camo-500 animate-pulse" aria-hidden="true" />
-        <span className="text-sm font-semibold text-camo-700 uppercase tracking-widest">
+        <span className="text-base font-semibold text-camo-700 uppercase tracking-widest">
           Currently Building
         </span>
       </div>
@@ -36,17 +36,17 @@ export default function CurrentlyBuilding() {
         {PROJECTS.map((project) => (
           <div
             key={project.name}
-            className="bg-white rounded-xl border border-camo-100 border-l-4 border-l-camo-500 p-6 flex flex-col gap-4"
+            className="bg-surface rounded-xl border border-camo-100 border-l-4 border-l-camo-500 p-6 flex flex-col gap-4"
           >
             <div>
               <div className="flex items-center gap-2 mb-1">
-                <h3 className="text-lg font-bold text-camo-900">{project.name}</h3>
-                <span className="px-2 py-0.5 text-xs font-semibold rounded-full bg-camo-100 text-camo-700">
+                <h3 className="text-xl font-bold text-camo-900">{project.name}</h3>
+                <span className="px-2 py-0.5 text-sm font-semibold rounded-full bg-camo-100 text-camo-700">
                   {project.status}
                 </span>
               </div>
-              <p className="text-xs font-medium text-camo-500 mb-2">{project.platform}</p>
-              <p className="text-sm text-camo-900/60 leading-relaxed">{project.description}</p>
+              <p className="text-sm font-medium text-camo-500 mb-2">{project.platform}</p>
+              <p className="text-base text-camo-900/60 leading-relaxed">{project.description}</p>
             </div>
 
             {project.tech.length > 0 && (
@@ -54,7 +54,7 @@ export default function CurrentlyBuilding() {
                 {project.tech.map((tag) => (
                   <span
                     key={tag}
-                    className="px-2.5 py-0.5 bg-camo-100 text-camo-700 text-xs font-medium rounded-full"
+                    className="px-2.5 py-0.5 bg-camo-100 text-camo-700 text-sm font-medium rounded-full"
                   >
                     {tag}
                   </span>
@@ -63,7 +63,7 @@ export default function CurrentlyBuilding() {
             )}
 
             {project.status === 'Stealth' && (
-              <div className="flex items-center gap-1.5 text-xs text-camo-900/40">
+              <div className="flex items-center gap-1.5 text-sm text-camo-900/40">
                 <Lock size={12} />
                 <span>Details withheld for business reasons</span>
               </div>

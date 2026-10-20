@@ -3,6 +3,30 @@
 @tailwind utilities;
 
 @layer base {
+  /* Light camo palette (RGB channels so Tailwind opacity modifiers work) */
+  :root {
+    --cream: 250 250 247;     /* page background */
+    --surface: 255 255 255;   /* cards */
+    --camo-100: 239 241 232;  /* subtle fills, pills */
+    --camo-300: 196 202 158;  /* borders */
+    --camo-500: 122 139 82;   /* muted accent */
+    --camo-700: 75 83 32;     /* primary accent */
+    --camo-900: 30 34 16;     /* main text */
+    color-scheme: light;
+  }
+
+  /* Dark camo palette: same roles, inverted for a dark olive background */
+  .dark {
+    --cream: 18 21 11;
+    --surface: 27 32 18;
+    --camo-100: 37 44 25;
+    --camo-300: 66 76 43;
+    --camo-500: 142 159 98;
+    --camo-700: 181 194 126;
+    --camo-900: 236 238 224;
+    color-scheme: dark;
+  }
+
   html {
     scroll-behavior: smooth;
   }
@@ -47,12 +71,17 @@
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #FAFAF7;
+  background: rgb(var(--cream));
 }
 ::-webkit-scrollbar-thumb {
-  background: #C4CA9E;
+  background: rgb(var(--camo-300));
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #4B5320;
+  background: rgb(var(--camo-700));
+}
+
+/* Camo background shapes are dark PNGs; flip them so they stay visible on the dark theme */
+.dark .camo-shape {
+  filter: invert(1);
 }

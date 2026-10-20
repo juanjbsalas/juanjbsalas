@@ -35,7 +35,7 @@ export default function Contact() {
         <h2 className="text-3xl sm:text-4xl font-bold text-camo-900 tracking-tight mb-3">
           Contact
         </h2>
-        <p className="text-camo-900/60 text-base leading-relaxed max-w-xl mx-auto">
+        <p className="text-camo-900/60 text-lg leading-relaxed max-w-xl mx-auto">
           I&apos;m always looking to learn something new and meet new people. Whether
           you have an opportunity, a question, or just want to say hi, my inbox is open.
         </p>
@@ -49,16 +49,16 @@ export default function Contact() {
             target={external ? '_blank' : undefined}
             rel={external ? 'noopener noreferrer' : undefined}
             aria-label={label}
-            className="flex items-center gap-4 p-4 bg-white rounded-xl border border-camo-100 hover:border-camo-300 hover:shadow-sm transition-all group"
+            className="flex items-center gap-4 p-4 bg-surface rounded-xl border border-camo-100 hover:border-camo-300 hover:shadow-sm transition-all group"
           >
-            <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-camo-100 text-camo-700 group-hover:bg-camo-700 group-hover:text-white transition-colors flex-shrink-0">
+            <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-camo-100 text-camo-700 group-hover:bg-camo-700 group-hover:text-cream transition-colors flex-shrink-0">
               <Icon size={18} aria-hidden="true" />
             </div>
             <div className="flex flex-col min-w-0">
-              <span className="text-xs font-semibold text-camo-900/40 uppercase tracking-wider">
+              <span className="text-sm font-semibold text-camo-900/40 uppercase tracking-wider">
                 {label}
               </span>
-              <span className="text-sm font-medium text-camo-900 truncate">{display}</span>
+              <span className="text-base font-medium text-camo-900 truncate">{display}</span>
             </div>
             {external && (
               <ExternalLink

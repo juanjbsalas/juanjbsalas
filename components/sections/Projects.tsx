@@ -66,7 +66,7 @@ function InvoiceXchangeCard() {
   const next = () => go((current + 1) % INVOICE_IMAGES.length)
 
   return (
-    <div className="relative bg-white rounded-2xl border border-camo-100 border-l-4 border-l-camo-700 shadow-sm overflow-hidden mb-6">
+    <div className="relative bg-surface rounded-2xl border border-camo-100 border-l-4 border-l-camo-700 shadow-sm overflow-hidden mb-6">
       <div className="p-6 lg:p-8">
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Left: info */}
@@ -75,7 +75,7 @@ function InvoiceXchangeCard() {
             <div>
               <div className="flex items-center gap-3 mb-3 flex-wrap">
                 <h3 className="text-2xl font-bold text-camo-900">InvoiceXchange</h3>
-                <span className="flex items-center gap-1 px-2.5 py-0.5 bg-amber-50 text-amber-700 border border-amber-200 text-xs font-semibold rounded-full">
+                <span className="flex items-center gap-1 px-2.5 py-0.5 bg-amber-50 text-amber-700 border border-amber-200 dark:bg-amber-950/50 dark:text-amber-300 dark:border-amber-800 text-sm font-semibold rounded-full">
                   <Trophy size={11} />
                   Honorary Mention
                 </span>
@@ -92,15 +92,15 @@ function InvoiceXchangeCard() {
                     sizes="30px"
                   />
                 </div>
-                <span className="text-xs font-semibold text-camo-600 uppercase tracking-wider">
+                <span className="text-sm font-semibold text-camo-700 uppercase tracking-wider">
                   Winthrop Hackathon
                 </span>
               </div>
 
-              <p className="text-camo-700 font-medium text-sm mb-2">
+              <p className="text-camo-700 font-medium text-base mb-2">
                 A multi-sided invoice factoring platform for the agricultural supply chain.
               </p>
-              <p className="text-camo-900/60 text-sm leading-relaxed">
+              <p className="text-camo-900/60 text-base leading-relaxed">
                 Suppliers get paid within 24 hours. Manufacturers keep their payment terms.
                 Investors earn a predictable 8% APY on asset-backed deals. Built and pitched
                 at Winthrop University&apos;s hackathon, where it earned an honorary mention.
@@ -112,7 +112,7 @@ function InvoiceXchangeCard() {
               {['Next.js', 'TypeScript', 'Supabase', 'Tailwind CSS'].map((tag) => (
                 <span
                   key={tag}
-                  className="px-2.5 py-0.5 bg-camo-100 text-camo-700 text-xs font-medium rounded-full"
+                  className="px-2.5 py-0.5 bg-camo-100 text-camo-700 text-sm font-medium rounded-full"
                 >
                   {tag}
                 </span>
@@ -127,7 +127,7 @@ function InvoiceXchangeCard() {
 
           {/* Right: auto-sliding image carousel */}
           <div className="flex flex-col gap-2">
-            <p className="text-xs font-semibold text-camo-900/50 uppercase tracking-widest">Preview</p>
+            <p className="text-sm font-semibold text-camo-900/50 uppercase tracking-widest">Preview</p>
             <div className="relative rounded-lg overflow-hidden bg-camo-100 aspect-video">
               <Image
                 src={INVOICE_IMAGES[current]}
@@ -139,14 +139,14 @@ function InvoiceXchangeCard() {
               <button
                 onClick={prev}
                 aria-label="Previous image"
-                className="absolute left-2 top-1/2 -translate-y-1/2 p-1 rounded-full bg-white/80 hover:bg-white text-camo-700 shadow transition-colors"
+                className="absolute left-2 top-1/2 -translate-y-1/2 p-1 rounded-full bg-surface/80 hover:bg-surface text-camo-700 shadow transition-colors"
               >
                 <ChevronLeft size={16} />
               </button>
               <button
                 onClick={next}
                 aria-label="Next image"
-                className="absolute right-2 top-1/2 -translate-y-1/2 p-1 rounded-full bg-white/80 hover:bg-white text-camo-700 shadow transition-colors"
+                className="absolute right-2 top-1/2 -translate-y-1/2 p-1 rounded-full bg-surface/80 hover:bg-surface text-camo-700 shadow transition-colors"
               >
                 <ChevronRight size={16} />
               </button>
@@ -172,7 +172,7 @@ function InvoiceXchangeCard() {
 
 function HotelLensCard() {
   return (
-    <article className="group flex flex-col bg-white rounded-xl border border-camo-100 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-camo-300">
+    <article className="group flex flex-col bg-surface rounded-xl border border-camo-100 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-camo-300">
       {/* Header image area with hackathon badge */}
       <div className="relative aspect-video bg-camo-100 overflow-hidden flex items-center justify-center">
         <Image
@@ -183,7 +183,7 @@ function HotelLensCard() {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         {/* Hackathon badge overlay */}
-        <div className="absolute top-3 left-3 flex items-center gap-1.5 px-2 py-1 bg-white/90 backdrop-blur-sm rounded-md shadow-sm">
+        <div className="absolute top-3 left-3 flex items-center gap-1.5 px-2 py-1 bg-surface/90 backdrop-blur-sm rounded-md shadow-sm">
           <div className="relative w-6 h-6 flex-shrink-0">
             <Image
               src="/images/gtech.png"
@@ -193,20 +193,20 @@ function HotelLensCard() {
               sizes="24px"
             />
           </div>
-          <span className="text-xs font-semibold text-camo-800">Georgia Tech Hackathon</span>
+          <span className="text-sm font-semibold text-camo-900">Georgia Tech Hackathon</span>
         </div>
       </div>
 
       {/* Content */}
       <div className="flex flex-col flex-1 p-5 gap-3">
-        <h3 className="font-semibold text-camo-900 text-lg leading-snug">HotelLens</h3>
-        <p className="text-sm text-camo-900/65 leading-relaxed flex-1">
+        <h3 className="font-semibold text-camo-900 text-xl leading-snug">HotelLens</h3>
+        <p className="text-base text-camo-900/65 leading-relaxed flex-1">
           A webapp helping travelers aged 18–21 find hotels that allow check-in under 21,
           a surprisingly difficult problem for young adults. Built at Georgia Tech&apos;s hackathon.
         </p>
         <div className="flex flex-wrap gap-1.5">
           {['React', 'JavaScript', 'Tailwind CSS'].map((tag) => (
-            <span key={tag} className="px-2 py-0.5 bg-camo-100 text-camo-700 text-xs font-medium rounded-full">
+            <span key={tag} className="px-2 py-0.5 bg-camo-100 text-camo-700 text-sm font-medium rounded-full">
               {tag}
             </span>
           ))}
@@ -244,7 +244,7 @@ function SmartKoozieCard() {
   const slide = KOOZIE_SLIDES[current]
 
   return (
-    <article className="group flex flex-col bg-white rounded-xl border border-camo-100 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-camo-300">
+    <article className="group flex flex-col bg-surface rounded-xl border border-camo-100 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-camo-300">
       <div className="relative aspect-video bg-black overflow-hidden">
         <div className={`absolute inset-0 transition-opacity duration-300 ${visible ? 'opacity-100' : 'opacity-0'}`}>
         {slide.type === 'video' ? (
@@ -271,14 +271,14 @@ function SmartKoozieCard() {
         </div>
       </div>
       <div className="flex flex-col flex-1 p-5 gap-3">
-        <h3 className="font-semibold text-camo-900 text-lg leading-snug">Smart Koozie</h3>
-        <p className="text-sm text-camo-900/65 leading-relaxed flex-1">
+        <h3 className="font-semibold text-camo-900 text-xl leading-snug">Smart Koozie</h3>
+        <p className="text-base text-camo-900/65 leading-relaxed flex-1">
           A Bluetooth-enabled drink cooler controlled via an iPhone app. Uses a Peltier module
           for active cooling and an Arduino Nano ESP32 for wireless communication via the RemoteXY platform.
         </p>
         <div className="flex flex-wrap gap-1.5">
           {['Arduino', 'C++', 'RemoteXY', 'Peltier Module'].map((tag) => (
-            <span key={tag} className="px-2 py-0.5 bg-camo-100 text-camo-700 text-xs font-medium rounded-full">
+            <span key={tag} className="px-2 py-0.5 bg-camo-100 text-camo-700 text-sm font-medium rounded-full">
               {tag}
             </span>
           ))}
@@ -295,7 +295,7 @@ export default function Projects() {
         <h2 className="text-3xl sm:text-4xl font-bold text-camo-900 tracking-tight">
           Projects
         </h2>
-        <p className="mt-3 text-camo-900/60 text-base max-w-xl">
+        <p className="mt-3 text-camo-900/60 text-lg max-w-xl">
           A selection of projects across web development and embedded systems.
         </p>
       </div>

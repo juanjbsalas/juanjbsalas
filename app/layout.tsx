@@ -52,13 +52,26 @@ export const metadata: Metadata = {
   },
 }
 
+const THEME_SCRIPT = `
+try {
+  var saved = localStorage.getItem('theme');
+  var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  document.documentElement.classList.toggle('dark', dark);
+} catch (e) {}
+`
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
+    // suppressHydrationWarning: the theme script below adds the `dark` class before React loads
+    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`} suppressHydrationWarning>
+      <head>
+        {/* Apply the saved theme, or the system setting, before first paint to avoid a flash */}
+        <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
+      </head>
       <body className="min-h-screen bg-cream">
         <CamoBackground />
         {children}

@@ -16,12 +16,12 @@ export default function Hero() {
           style={{ animationFillMode: 'both' }}
         >
           {/* Open badge */}
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-green-300 bg-green-50 text-xs font-medium text-green-700">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-green-300 bg-green-50 text-sm font-medium text-green-700 dark:border-green-800 dark:bg-green-950/50 dark:text-green-300">
             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" aria-hidden="true" />
             Open for Spring 2027, Summer 2027, and Fall 2027 opportunities
           </div>
           {/* Closed badge */}
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-red-300 bg-red-50 text-xs font-medium text-red-600">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-red-300 bg-red-50 text-sm font-medium text-red-600 dark:border-red-800 dark:bg-red-950/50 dark:text-red-300">
             <span className="w-2 h-2 rounded-full bg-red-500" aria-hidden="true" />
             Closed for Fall 2026 internships/co-ops
           </div>
@@ -37,7 +37,7 @@ export default function Hero() {
 
         {/* Subtitle */}
         <p
-          className="flex items-center justify-center gap-2 flex-wrap text-lg sm:text-xl text-camo-900/60 font-medium mb-4 animate-fade-up"
+          className="flex items-center justify-center gap-2 flex-wrap text-xl sm:text-2xl text-camo-900/60 font-medium mb-4 animate-fade-up"
           style={{ animationFillMode: 'both', animationDelay: '200ms' }}
         >
           CS &amp; Applied Math ·&nbsp;
@@ -55,7 +55,7 @@ export default function Hero() {
 
         {/* Tagline */}
         {/* <p
-          className="text-base sm:text-lg text-camo-500 italic mb-10 animate-fade-up"
+          className="text-lg sm:text-xl text-camo-500 italic mb-10 animate-fade-up"
           style={{ animationFillMode: 'both', animationDelay: '300ms' }}
         >
           Building invoice investment marketplace using Typescript + AI technologies
@@ -68,13 +68,13 @@ export default function Hero() {
         >
           <button
             onClick={() => scrollTo('experience')}
-            className="w-full sm:w-auto px-7 py-3 bg-camo-700 text-white font-medium rounded-lg hover:bg-camo-900 transition-colors text-sm"
+            className="w-full sm:w-auto px-7 py-3 bg-camo-700 text-cream font-medium rounded-lg hover:bg-camo-900 transition-colors text-base"
           >
             View Experience
           </button>
           <button
             onClick={() => scrollTo('contact')}
-            className="w-full sm:w-auto px-7 py-3 border border-camo-700 text-camo-700 font-medium rounded-lg hover:bg-camo-700 hover:text-white transition-colors text-sm"
+            className="w-full sm:w-auto px-7 py-3 border border-camo-700 text-camo-700 font-medium rounded-lg hover:bg-camo-700 hover:text-cream transition-colors text-base"
           >
             Contact Me
           </button>
@@ -87,7 +87,7 @@ export default function Hero() {
         style={{ animationFillMode: 'both', animationDelay: '700ms' }}
         aria-hidden="true"
       >
-        <span className="text-xs text-camo-900/30 tracking-widest uppercase">Scroll</span>
+        <span className="text-sm text-camo-900/30 tracking-widest uppercase">Scroll</span>
         <div className="w-px h-8 bg-gradient-to-b from-camo-300 to-transparent" />
       </div>
     </div>

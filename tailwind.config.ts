@@ -6,16 +6,19 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
+      // Palette values live in globals.css as CSS variables so dark mode can swap them
       colors: {
-        cream: '#FAFAF7',
+        cream: 'rgb(var(--cream) / <alpha-value>)',
+        surface: 'rgb(var(--surface) / <alpha-value>)',
         camo: {
-          100: '#EFF1E8',
-          300: '#C4CA9E',
-          500: '#7A8B52',
-          700: '#4B5320',
-          900: '#1E2210',
+          100: 'rgb(var(--camo-100) / <alpha-value>)',
+          300: 'rgb(var(--camo-300) / <alpha-value>)',
+          500: 'rgb(var(--camo-500) / <alpha-value>)',
+          700: 'rgb(var(--camo-700) / <alpha-value>)',
+          900: 'rgb(var(--camo-900) / <alpha-value>)',
         },
       },
       fontFamily: {

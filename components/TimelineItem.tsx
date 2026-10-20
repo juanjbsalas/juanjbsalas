@@ -36,7 +36,7 @@ export default function TimelineItem({
       <div className="pb-8">
         <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
           <div>
-            <h3 className="font-semibold text-camo-900 text-lg">{role}</h3>
+            <h3 className="font-semibold text-camo-900 text-xl">{role}</h3>
             <div className="flex items-center gap-2 mt-0.5">
               {logo && (
                 <div className="relative w-[30px] h-[30px] flex-shrink-0">
@@ -49,16 +49,16 @@ export default function TimelineItem({
                   />
                 </div>
               )}
-              <p className="text-camo-700 font-medium text-sm">{company}</p>
+              <p className="text-camo-700 font-medium text-base">{company}</p>
             </div>
           </div>
-          {dates && <time className="text-sm text-camo-900/50 whitespace-nowrap">{dates}</time>}
+          {dates && <time className="text-base text-camo-900/50 whitespace-nowrap">{dates}</time>}
         </div>
 
         {bullets && bullets.length > 0 && (
           <ul className="mt-3 space-y-2">
             {bullets.map((bullet, i) => (
-              <li key={i} className="flex gap-2 text-sm text-camo-900/70 leading-relaxed">
+              <li key={i} className="flex gap-2 text-base text-camo-900/70 leading-relaxed">
                 <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-camo-500 flex-shrink-0" aria-hidden="true" />
                 {bullet}
               </li>

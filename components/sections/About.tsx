@@ -51,7 +51,7 @@ export default function About() {
 
       <div className="grid lg:grid-cols-5 gap-12 items-start">
         {/* Text — 3 cols */}
-        <div className="lg:col-span-3 flex flex-col gap-5 text-base text-camo-900/70 leading-relaxed">
+        <div className="lg:col-span-3 flex flex-col gap-5 text-lg text-camo-900/70 leading-relaxed">
           <p>
             I&apos;m Juan Salas, a Computer Science and Applied Mathematics student at{' '}
             <span className="text-camo-700 font-medium">Wofford College</span> (Class of 2027),
@@ -75,14 +75,14 @@ export default function About() {
 
         {/* Skills — 2 cols */}
         <div className="lg:col-span-2">
-          <h3 className="text-xs font-semibold text-camo-900/50 uppercase tracking-widest mb-4">
+          <h3 className="text-sm font-semibold text-camo-900/50 uppercase tracking-widest mb-4">
             Technologies &amp; Tools
           </h3>
           <div className="flex flex-wrap gap-2">
             {SKILLS.map((skill) => (
               <span
                 key={skill}
-                className="px-3 py-1.5 bg-camo-100 text-camo-700 text-sm font-medium rounded-lg border border-camo-300/50 hover:border-camo-700 hover:bg-white transition-colors cursor-default"
+                className="px-3 py-1.5 bg-camo-100 text-camo-700 text-base font-medium rounded-lg border border-camo-300/50 hover:border-camo-700 hover:bg-surface transition-colors cursor-default"
               >
                 {skill}
               </span>
